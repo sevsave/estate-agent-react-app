@@ -36,15 +36,15 @@
             "id": "prop3",
             "type": "House",
             "bedrooms": 4,
-            "price": 925000,
+            "price": 895000,
             "tenure": "Freehold",
-            "description": "Spacious four bedroom detached house located in a quiet residential area. The property features a large living room, modern fitted kitchen, separate dining room and a private garden. Ideal for families seeking comfort and space.",
-            "location": "Chislehurst High Street, Chislehurst BR7",
+            "description": "Spacious four bedroom detached family home located in a quiet residential area. Features include a modern open-plan kitchen, two reception rooms, a private garden, and off-street parking. Ideal for families seeking space and comfort.",
+            "location": "Oakwood Drive, Beckenham BR3",
             "picture": "images/prop3pic1small.jpg",
             "url": "properties/prop3.html",
             "added": {
-                "month": "August",
-                "day": 5,
+                "month": "January",
+                "day": 18,
                 "year": 2023
             }
         },
@@ -54,47 +54,46 @@
             "bedrooms": 1,
             "price": 275000,
             "tenure": "Leasehold",
-            "description": "Modern one bedroom apartment located close to transport links and local amenities. The property includes an open-plan kitchen/living area, a spacious bedroom and a contemporary bathroom.",
-            "location": "Lewisham Road, London SE13",
+            "description": "Well-presented one bedroom apartment situated close to local amenities and transport links. The property offers a bright living area, fitted kitchen, modern bathroom, and allocated parking.",
+            "location": "High Street, Croydon CR0",
             "picture": "images/prop4pic1small.jpg",
             "url": "properties/prop4.html",
             "added": {
-                "month": "January",
-                "day": 20,
-                "year": 2024
+                "month": "March",
+                "day": 5,
+                "year": 2023
             }
         },
         {
             "id": "prop5",
             "type": "House",
             "bedrooms": 5,
-            "price": 1200000,
+            "price": 1250000,
             "tenure": "Freehold",
-            "description": "Impressive five bedroom luxury home offering high-end finishes throughout. Includes multiple reception rooms, a large kitchen, landscaped garden and off-street parking.",
-            "location": "Bromley Common, Bromley BR2",
+            "description": "Impressive five bedroom luxury home offering generous living accommodation across three floors. Includes a landscaped garden, double garage, and high-end finishes throughout.",
+            "location": "Maple Avenue, Sevenoaks TN13",
             "picture": "images/prop5pic1small.jpg",
             "url": "properties/prop5.html",
             "added": {
-                "month": "March",
-                "day": 10,
-                "year": 2023
+                "month": "June",
+                "day": 22,
+                "year": 2022
             }
         },
         {
-  
-          "id": "prop6",
+            "id": "prop6",
             "type": "Flat",
             "bedrooms": 3,
-            "price": 550000,
+            "price": 540000,
             "tenure": "Leasehold",
-            "description": "Bright and spacious three bedroom penthouse flat with balcony views. Features include modern interiors, lift access and secure parking.",
-            "location": "Canary Wharf, London E14",
+            "description": "Modern three bedroom apartment located within a contemporary development. Benefits include balcony access, open-plan living space, lift access, and secure entry system.",
+            "location": "Riverside Way, Greenwich SE10",
             "picture": "images/prop6pic1small.jpg",
             "url": "properties/prop6.html",
             "added": {
-                "month": "June",
-                "day": 18,
-                "year": 2024
+                "month": "November",
+                "day": 10,
+                "year": 2023
             }
         },
         {
@@ -103,16 +102,20 @@
             "bedrooms": 2,
             "price": 460000,
             "tenure": "Freehold",
-            "description": "Charming two bedroom cottage with original features and a private rear garden. Situated close to local shops and public transport.",
-            "location": "Beckenham Road, Beckenham BR3",
+            "description": "Charming two bedroom terraced house ideal for first-time buyers. The property includes a cosy living room, fitted kitchen, private rear garden, and excellent transport connections.",
+            "location": "Station Road, Dartford DA1",
             "picture": "images/prop7pic1small.jpg",
             "url": "properties/prop7.html",
             "added": {
-                "month": "November",
+                "month": "August",
                 "day": 2,
-                "year": 2023
+                "year": 2021
             }
         }
+
+
+        
+        
 
 
 
