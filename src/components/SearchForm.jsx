@@ -2,12 +2,13 @@ import React from "react";
 import { DropdownList, NumberPicker, DatePicker } from "react-widgets";
 import "react-widgets/styles.css";
 
-function SearchForm({ criteria, setCriteria }) {
+function SearchForm({ criteria, setCriteria, onSearch }) {
   const propertyTypes = ["Any", "House", "Flat"];
   const postcodeOptions = ["Any", "BR3", "BR5", "BR6", "CR0", "DA1", "SE10", "TN13"];
   const bedroomOptions = ["Any", 1, 2, 3, 4, 5, 6];
+
   return (
-    <form className="search-form">
+    <div className="search-form">
       <h3>Find Your Property</h3>
 
       <label>
@@ -15,7 +16,9 @@ function SearchForm({ criteria, setCriteria }) {
         <DropdownList
           data={propertyTypes}
           value={criteria.type || "Any"}
-          onChange={(value) => setCriteria({ ...criteria, type: value === "Any" ? "" : value })}
+          onChange={(value) =>
+            setCriteria({ ...criteria, type: value === "Any" ? "" : value })
+          }
         />
       </label>
 
@@ -36,7 +39,7 @@ function SearchForm({ criteria, setCriteria }) {
           onChange={(value) => setCriteria({ ...criteria, maxPrice: value })}
         />
       </label>
-      
+
       <label>
         Min Bedrooms
         <DropdownList
@@ -48,7 +51,6 @@ function SearchForm({ criteria, setCriteria }) {
         />
       </label>
 
-      
       <label>
         Max Bedrooms
         <DropdownList
@@ -59,7 +61,6 @@ function SearchForm({ criteria, setCriteria }) {
           }
         />
       </label>
-      
 
       <label>
         Date Added - From
@@ -82,10 +83,28 @@ function SearchForm({ criteria, setCriteria }) {
         <DropdownList
           data={postcodeOptions}
           value={criteria.postcode || "Any"}
-          onChange={(value) => setCriteria({ ...criteria, postcode: value === "Any" ? "" : value })}
+          onChange={(value) =>
+            setCriteria({ ...criteria, postcode: value === "Any" ? "" : value })
+          }
         />
       </label>
-    </form>
+
+      {/* ✅ Make sure type="button" so it doesn't submit the form */}
+      <button
+        type="button"
+        onClick={onSearch}
+        style={{
+          marginTop: "10px",
+          padding: "10px 20px",
+          backgroundColor: "#007bff",
+          color: "white",
+          border: "none",
+          cursor: "pointer",
+        }}
+      >
+        Search
+      </button>
+    </div>
   );
 }
 
