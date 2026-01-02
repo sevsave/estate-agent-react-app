@@ -89,7 +89,7 @@ function SearchForm({ criteria, setCriteria, onSearch }) {
         />
       </label>
 
-      {/* ✅ Make sure type="button" so it doesn't submit the form */}
+      
       <button
         type="button"
         onClick={onSearch}

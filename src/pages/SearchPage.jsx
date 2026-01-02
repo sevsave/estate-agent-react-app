@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import propertiesData from "../data/properties.json";
+import { Link } from "react-router-dom";
+ 
 
 function SearchPage() {
   const [criteria, setCriteria] = useState({});
@@ -25,24 +27,36 @@ function SearchPage() {
   }
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="search-page">
       <h2>Property Search</h2>
 
-      {/* pass handleSearch to the form */}
       <SearchForm criteria={criteria} setCriteria={setCriteria} onSearch={handleSearch} />
 
       <hr />
 
+      {/*results*/}
+
       <div className="results">
         {results.length === 0 && <p>No properties found.</p>}
         {results.map((property) => (
-          <div key={property.id} className="property-card">
-            <img src={property.picture} alt="property" width="200" />
+          <Link
+              key={property.id}
+              to={`/property/${property.id}`}
+              className="property-link"
+          >
+            <div className="property-card">
+              <img
+                src={property.picture}
+                alt="property"
+                width="200"
+              />
+          
             <p><strong>{property.type}</strong></p>
             <p>£{property.price.toLocaleString()}</p>
             <p>{property.bedrooms} bedrooms</p>
             <p>{property.location}</p>
           </div>
+          </Link>
         ))}
       </div>
     </div>
