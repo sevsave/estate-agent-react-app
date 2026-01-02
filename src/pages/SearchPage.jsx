@@ -1,14 +1,14 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import SearchForm from "../components/SearchForm";
 
 function SearchPage() {
-  const [filters, setFilters] = useState({});
+  const [criteria, setCriteria] = useState({});
 
   return (
-    <>
-      <h1>Property Search</h1>
-      <SearchForm filters={filters} setFilters={setFilters} />
-    </>
+    <div>
+      <h2>Property Search</h2>
+      <SearchForm criteria={criteria} setCriteria={setCriteria} />
+    </div>
   );
 }
 

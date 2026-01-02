@@ -1,80 +1,90 @@
-import { DateTimePicker, NumberPicker, DropdownList } from 'react-widgets';
-import 'react-widgets/styles.css';
-import moment from 'moment';
-import momentLocalizer from 'react-widgets-moment';
+import React from "react";
+import { DropdownList, NumberPicker, DatePicker } from "react-widgets";
+import "react-widgets/styles.css";
 
-momentLocalizer(moment);
-
-function SearchForm({ filters, setFilters }) {
-
+function SearchForm({ criteria, setCriteria }) {
+  const propertyTypes = ["Any", "House", "Flat"];
+  const postcodeOptions = ["Any", "BR3", "BR5", "BR6", "CR0", "DA1", "SE10", "TN13"];
+  const bedroomOptions = ["Any", 1, 2, 3, 4, 5, 6];
   return (
     <form className="search-form">
+      <h3>Find Your Property</h3>
 
-      {/* Property Type */}
-      <div>
-        <label>Property Type</label>
+      <label>
+        Property Type
         <DropdownList
-          data={['House', 'Flat']}
-          value={filters.type || null}
-          onChange={val => setFilters({ ...filters, type: val })}
+          data={propertyTypes}
+          value={criteria.type || "Any"}
+          onChange={(value) => setCriteria({ ...criteria, type: value === "Any" ? "" : value })}
         />
-      </div>
+      </label>
 
-      {/* Min Price */}
-      <div>
-        <label>Min Price</label>
+      <label>
+        Min Price
         <NumberPicker
-          value={filters.minPrice || null}
-          onChange={val => setFilters({ ...filters, minPrice: val })}
+          value={criteria.minPrice || null}
+          min={0}
+          onChange={(value) => setCriteria({ ...criteria, minPrice: value })}
         />
-      </div>
+      </label>
 
-      {/* Max Price */}
-      <div>
-        <label>Max Price</label>
+      <label>
+        Max Price
         <NumberPicker
-          value={filters.maxPrice || null}
-          onChange={val => setFilters({ ...filters, maxPrice: val })}
+          value={criteria.maxPrice || null}
+          min={0}
+          onChange={(value) => setCriteria({ ...criteria, maxPrice: value })}
         />
-      </div>
-
-      {/* Min Bedrooms */}
-      <div>
-        <label>Min Bedrooms</label>
-        <NumberPicker
-          value={filters.minBeds || null}
-          onChange={val => setFilters({ ...filters, minBeds: val })}
-        />
-      </div>
-
-      {/* Max Bedrooms */}
-      <div>
-        <label>Max Bedrooms</label>
-        <NumberPicker
-          value={filters.maxBeds || null}
-          onChange={val => setFilters({ ...filters, maxBeds: val })}
-        />
-      </div>
-
-      {/* Date Added */}
-      <div>
-        <label>Date Added</label>
-        <DateTimePicker
-          value={filters.dateAdded || null}
-          onChange={val => setFilters({ ...filters, dateAdded: val })}
-        />
-      </div>
-
-      {/* Postcode Area */}
-      <div>
-        <label>Postcode Area</label>
+      </label>
+      
+      <label>
+        Min Bedrooms
         <DropdownList
-          data={['CR0', 'BR6', 'BR3','BR5','TN13','SE10','DA1']} 
-          value={filters.postcode || null}
-          onChange={val => setFilters({ ...filters, postcode: val })}
+          data={bedroomOptions}
+          value={criteria.minBeds || "Any"}
+          onChange={(value) =>
+            setCriteria({ ...criteria, minBeds: value === "Any" ? "" : value })
+          }
         />
-      </div>
+      </label>
 
+      
+      <label>
+        Max Bedrooms
+        <DropdownList
+          data={bedroomOptions}
+          value={criteria.maxBeds || "Any"}
+          onChange={(value) =>
+            setCriteria({ ...criteria, maxBeds: value === "Any" ? "" : value })
+          }
+        />
+      </label>
+      
+
+      <label>
+        Date Added - From
+        <DatePicker
+          value={criteria.dateFrom || null}
+          onChange={(value) => setCriteria({ ...criteria, dateFrom: value })}
+        />
+      </label>
+
+      <label>
+        Date Added - To
+        <DatePicker
+          value={criteria.dateTo || null}
+          onChange={(value) => setCriteria({ ...criteria, dateTo: value })}
+        />
+      </label>
+
+      <label>
+        Postcode Area
+        <DropdownList
+          data={postcodeOptions}
+          value={criteria.postcode || "Any"}
+          onChange={(value) => setCriteria({ ...criteria, postcode: value === "Any" ? "" : value })}
+        />
+      </label>
     </form>
   );
 }
