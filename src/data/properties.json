@@ -6,9 +6,23 @@
             "bedrooms":3,
 			"price":750000,
 			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+            "shortDescription": "Three bedroom semi-detached family home located close to Petts Wood station and local amenities.",
+            "description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-			"picture":"images/prop1pic1small.jpg",
+            "postcode":"BR5",
+			"picture":"images/prop1/pic1small.jpg",
+            "images":[
+                "images/prop1/pic1.jpg",
+                "images/prop1/pic2.jpg",
+                "images/prop1/pic3.jpg",
+                "images/prop1/pic4.jpg",
+                "images/prop1/pic5.jpg",
+                "images/prop1/pic6.jpg",
+                "images/prop1/pic7.jpg",
+                "images/prop1/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop1floorplan.jpg",
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
@@ -22,9 +36,23 @@
             "bedrooms":2,
 			"price":399995,
 			"tenure":"Freehold",
+            "shortDescription": "Modern two bedroom garden flat with open-plan living space and private courtyard garden.",
 			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
 			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
+            "postcode": "BR6",
+			"picture":"images/prop2/pic1small.jpg",
+            "images":[
+                "images/prop2/pic1.jpg",
+                "images/prop2/pic2.jpg",
+                "images/prop2/pic3.jpg",
+                "images/prop2/pic4.jpg",
+                "images/prop2/pic5.jpg",
+                "images/prop2/pic6.jpg",
+                "images/prop2/pic7.jpg",
+                "images/prop2/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop2floorplan.jpg",
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
@@ -38,9 +66,23 @@
             "bedrooms": 4,
             "price": 895000,
             "tenure": "Freehold",
+            "shortDescription": "Spacious four bedroom detached house in a quiet residential area, ideal for family living.",
             "description": "Spacious four bedroom detached family home located in a quiet residential area. Features include a modern open-plan kitchen, two reception rooms, a private garden, and off-street parking. Ideal for families seeking space and comfort.",
             "location": "Oakwood Drive, Beckenham BR3",
-            "picture": "images/prop3pic1small.jpg",
+            "postcode":"BR3",
+            "picture": "images/prop3/pic1small.jpg",
+            "images":[
+                "images/prop3/pic1.jpg",
+                "images/prop3/pic2.jpg",
+                "images/prop3/pic3.jpg",
+                "images/prop3/pic4.jpg",
+                "images/prop3/pic5.jpg",
+                "images/prop3/pic6.jpg",
+                "images/prop3/pic7.jpg",
+                "images/prop3/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop3floorplan.jpg",
             "url": "properties/prop3.html",
             "added": {
                 "month": "January",
@@ -54,9 +96,23 @@
             "bedrooms": 1,
             "price": 275000,
             "tenure": "Leasehold",
+            "shortDescription": "Well-presented one bedroom apartment close to transport links and local amenities.",
             "description": "Well-presented one bedroom apartment situated close to local amenities and transport links. The property offers a bright living area, fitted kitchen, modern bathroom, and allocated parking.",
             "location": "High Street, Croydon CR0",
-            "picture": "images/prop4pic1small.jpg",
+            "postcode":"CR0",
+            "picture": "images/prop4/pic1small.jpg",
+            "images":[
+                "images/prop4/pic1.jpg",
+                "images/prop4/pic2.jpg",
+                "images/prop4/pic3.jpg",
+                "images/prop4/pic4.jpg",
+                "images/prop4/pic5.jpg",
+                "images/prop4/pic6.jpg",
+                "images/prop4/pic7.jpg",
+                "images/prop4/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop4floorplan.jpg",
             "url": "properties/prop4.html",
             "added": {
                 "month": "March",
@@ -70,9 +126,23 @@
             "bedrooms": 5,
             "price": 1250000,
             "tenure": "Freehold",
+            "shortDescription": "Luxury five bedroom family home offering generous living space and high-quality finishes.",
             "description": "Impressive five bedroom luxury home offering generous living accommodation across three floors. Includes a landscaped garden, double garage, and high-end finishes throughout.",
             "location": "Maple Avenue, Sevenoaks TN13",
-            "picture": "images/prop5pic1small.jpg",
+            "postcode":"TN13",
+            "picture": "images/prop5/pic1small.jpg",
+            "images":[
+                "images/prop5/pic1.jpg",
+                "images/prop5/pic2.jpg",
+                "images/prop5/pic3.jpg",
+                "images/prop5/pic4.jpg",
+                "images/prop5/pic5.jpg",
+                "images/prop5/pic6.jpg",
+                "images/prop5/pic7.jpg",
+                "images/prop5/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop5floorplan.jpg",
             "url": "properties/prop5.html",
             "added": {
                 "month": "June",
@@ -86,9 +156,23 @@
             "bedrooms": 3,
             "price": 540000,
             "tenure": "Leasehold",
+            "shortDescription": "Contemporary three bedroom apartment with balcony access in a modern residential development.",
             "description": "Modern three bedroom apartment located within a contemporary development. Benefits include balcony access, open-plan living space, lift access, and secure entry system.",
             "location": "Riverside Way, Greenwich SE10",
-            "picture": "images/prop6pic1small.jpg",
+            "postcode":"SE10",
+            "picture": "images/prop6/pic1small.jpg",
+            "images":[
+                "images/prop6/pic1.jpg",
+                "images/prop6/pic2.jpg",
+                "images/prop6/pic3.jpg",
+                "images/prop6/pic4.jpg",
+                "images/prop6/pic5.jpg",
+                "images/prop6/pic6.jpg",
+                "images/prop6/pic7.jpg",
+                "images/prop6/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop6floorplan.jpg",
             "url": "properties/prop6.html",
             "added": {
                 "month": "November",
@@ -102,9 +186,23 @@
             "bedrooms": 2,
             "price": 460000,
             "tenure": "Freehold",
+            "shortDescription": "Charming two bedroom terraced house suitable for first-time buyers with excellent transport links.",
             "description": "Charming two bedroom terraced house ideal for first-time buyers. The property includes a cosy living room, fitted kitchen, private rear garden, and excellent transport connections.",
             "location": "Station Road, Dartford DA1",
-            "picture": "images/prop7pic1small.jpg",
+            "postcode":"DA1",
+            "picture": "images/prop7/pic1small.jpg",
+            "images":[
+                "images/prop7/pic1.jpg",
+                "images/prop7/pic2.jpg",
+                "images/prop7/pic3.jpg",
+                "images/prop7/pic4.jpg",
+                "images/prop7/pic5.jpg",
+                "images/prop7/pic6.jpg",
+                "images/prop7/pic7.jpg",
+                "images/prop7/pic8.jpg"
+
+            ],
+            "floorPlan":"images/prop7floorplan.jpg",
             "url": "properties/prop7.html",
             "added": {
                 "month": "August",
