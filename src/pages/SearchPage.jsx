@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import SearchForm from "../components/SearchForm";
 import propertiesData from "../data/properties.json";
 import { Link } from "react-router-dom";
+import FavouritesList from "../components/FavouritesList";
+import { FavouritesContext } from "../context/FavouritesContext";
  
 
 function SearchPage() {
   const [criteria, setCriteria] = useState({});
   const [results, setResults] = useState(propertiesData.properties);
+  const { Favourites, addFavourites } = useContext(FavouritesContext);
 
   function handleSearch() {
     const filtered = propertiesData.properties.filter((p) => {
@@ -38,12 +41,12 @@ function SearchPage() {
 
       <div className="results">
         {results.length === 0 && <p>No properties found.</p>}
-        {results.map((property) => (
-          <Link
-              key={property.id}
-              to={`/property/${property.id}`}
-              className="property-link"
-          >
+        {results.map((property) => {
+          const isFavourite = Favourites.some(
+            (fav) => fav.id === property.id
+          );
+
+          return(
             <div className="property-card">
               <img
                 src={property.picture}
@@ -55,10 +58,32 @@ function SearchPage() {
             <p>£{property.price.toLocaleString()}</p>
             <p>{property.bedrooms} bedrooms</p>
             <p>{property.location}</p>
+            <p>{property.shortDescription}</p> 
+
+            {/* ADD TO FAVOURITES */}
+              <button
+                onClick={() => addFavourites(property)}
+                disabled={isFavourite}
+              >
+                {isFavourite
+                  ? "Added to Favourites"
+                  : "Add to Favourites"}
+              </button>
+
+              {/* VIEW DETAILS */}
+              <Link to={`/property/${property.id}`}>
+                <button style={{ marginLeft: "10px" }}>
+                  View Details
+                </button>
+              </Link>
           </div>
-          </Link>
-        ))}
+          );
+          
+      })}
       </div>
+      <hr/>
+      {/* favourite list*/}
+      <FavouritesList/>
     </div>
   );
 }

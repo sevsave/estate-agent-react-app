@@ -10,19 +10,19 @@
             "description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
             "postcode":"BR5",
-			"picture":"images/prop1/pic1small.jpg",
+			"picture":"/images/prop1/pic1small.jpg",
             "images":[
-                "images/prop1/pic1.jpg",
-                "images/prop1/pic2.jpg",
-                "images/prop1/pic3.jpg",
-                "images/prop1/pic4.jpg",
-                "images/prop1/pic5.jpg",
-                "images/prop1/pic6.jpg",
-                "images/prop1/pic7.jpg",
-                "images/prop1/pic8.jpg"
+                "/images/prop1/pic1.jpg",
+                "/images/prop1/pic2.jpg",
+                "/images/prop1/pic3.jpg",
+                "/images/prop1/pic4.jpg",
+                "/images/prop1/pic5.jpg",
+                "/images/prop1/pic6.jpg",
+                "/images/prop1/pic7.jpg",
+                "/images/prop1/pic8.jpg"
 
             ],
-            "floorPlan":"images/prop1floorplan.jpg",
+            "floorPlan":"/images/prop1floorplan.jpg",
 			"url":"properties/prop1.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6754936725865!2d0.08208490000000002!3d51.3906419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1767428682821!5m2!1sen!2slk" ,
             "added" : {
@@ -44,17 +44,17 @@
             "postcode": "BR6",
 			"picture":"images/prop2/pic1small.jpg",
             "images":[
-                "images/prop2/pic1.jpg",
-                "images/prop2/pic2.jpg",
-                "images/prop2/pic3.jpg",
-                "images/prop2/pic4.jpg",
-                "images/prop2/pic5.jpg",
-                "images/prop2/pic6.jpg",
-                "images/prop2/pic7.jpg",
-                "images/prop2/pic8.jpg"
+                "/images/prop2/pic1.jpg",
+                "/images/prop2/pic2.jpg",
+                "/images/prop2/pic3.jpg",
+                "/images/prop2/pic4.jpg",
+                "/images/prop2/pic5.jpg",
+                "/images/prop2/pic6.jpg",
+                "/images/prop2/pic7.jpg",
+                "/images/prop2/pic8.jpg"
 
             ],
-            "floorPlan":"images/prop2floorplan.jpg",
+            "floorPlan":"/images/prop2floorplan.jpg",
 			"url":"properties/prop2.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.6133282394!2d0.0719676!3d51.373404799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1767428924921!5m2!1sen!2slk",
             "added": {
@@ -73,19 +73,19 @@
             "description": "Spacious four bedroom detached family home located in a quiet residential area. Features include a modern open-plan kitchen, two reception rooms, a private garden, and off-street parking. Ideal for families seeking space and comfort.",
             "location": "Oakwood Drive, Beckenham BR3",
             "postcode":"BR3",
-            "picture": "images/prop3/pic1small.jpg",
+            "picture": "/images/prop3/pic1small.jpg",
             "images":[
-                "images/prop3/pic1.jpg",
-                "images/prop3/pic2.jpg",
-                "images/prop3/pic3.jpg",
-                "images/prop3/pic4.jpg",
-                "images/prop3/pic5.jpg",
-                "images/prop3/pic6.jpg",
-                "images/prop3/pic7.jpg",
-                "images/prop3/pic8.jpg"
+                "/images/prop3/pic1.jpg",
+                "/images/prop3/pic2.jpg",
+                "/images/prop3/pic3.jpg",
+                "/images/prop3/pic4.jpg",
+                "/images/prop3/pic5.jpg",
+                "/images/prop3/pic6.jpg",
+                "/images/prop3/pic7.jpg",
+                "/images/prop3/pic8.jpg"
 
             ],
-            "floorPlan":"images/prop3floorplan.jpg",
+            "floorPlan":"/images/prop3floorplan.jpg",
             "url": "properties/prop3.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.930929686488!2d-0.0111632!3d51.4043238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487601db50b65e85%3A0x9fcc0024acdb8851!2sOakwood%20Ave%2C%20Beckenham%2C%20UK!5e0!3m2!1sen!2slk!4v1767429060221!5m2!1sen!2slk",
             "added": {
@@ -104,19 +104,19 @@
             "description": "Well-presented one bedroom apartment situated close to local amenities and transport links. The property offers a bright living area, fitted kitchen, modern bathroom, and allocated parking.",
             "location": "High Street, Croydon CR0",
             "postcode":"CR0",
-            "picture": "images/prop4/pic1small.jpg",
+            "picture": "/images/prop4/pic1small.jpg",
             "images":[
-                "images/prop4/pic1.jpg",
-                "images/prop4/pic2.jpg",
-                "images/prop4/pic3.jpg",
-                "images/prop4/pic4.jpg",
-                "images/prop4/pic5.jpg",
-                "images/prop4/pic6.jpg",
-                "images/prop4/pic7.jpg",
-                "images/prop4/pic8.jpg"
+                "/images/prop4/pic1.jpg",
+                "/images/prop4/pic2.jpg",
+                "/images/prop4/pic3.jpg",
+                "/images/prop4/pic4.jpg",
+                "/images/prop4/pic5.jpg",
+                "/images/prop4/pic6.jpg",
+                "/images/prop4/pic7.jpg",
+                "/images/prop4/pic8.jpg"
 
             ],
-            "floorPlan":"images/prop4floorplan.jpg",
+            "floorPlan":"/images/prop4floorplan.jpg",
             "url": "properties/prop4.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.7637396900213!2d-0.1000802!3d51.3706399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487607314c40f4d5%3A0xdcdb38df71d82fc6!2sHigh%20St%2C%20Croydon%2C%20UK!5e0!3m2!1sen!2slk!4v1767429116001!5m2!1sen!2slk", 
             "added": {
