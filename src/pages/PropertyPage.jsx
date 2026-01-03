@@ -1,5 +1,8 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import propertiesData from "../data/properties.json";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 function PropertyPage() {
   const { id } = useParams();
@@ -13,34 +16,54 @@ function PropertyPage() {
   }
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className="property-page">
       <h2>{property.type}</h2>
-      <p><strong>£{property.price.toLocaleString()}</strong></p>
-      <p>{property.location}</p>
+      <p className="price">£{property.price.toLocaleString()}</p>
+      <p className="location">{property.location}</p>
 
-      {/* Main Image */}
-      <img
-        src={property.picture}
-        alt="property"
-        style={{ width: "100%", maxWidth: "600px" }}
-      />
+      {/* 🔹 Main Image */}
+      <div className="main-image">
+        <img src={property.picture} alt="Main property" />
+      </div>
 
-      {/* Thumbnails */}
-      <div style={{ display: "flex", gap: "10px", marginTop: "1rem" }}>
-        {property.images?.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt="thumb"
-            width="100"
-          />
+      {/* 🔹 Thumbnails */}
+      <div className="thumbnails">
+        {property.images.map((img, index) => (
+          <img key={index} src={img} alt="thumbnail" />
         ))}
       </div>
 
-      <hr />
+      {/* 🔹 Tabs */}
+      <Tabs>
+        <TabList>
+          <Tab>Description</Tab>
+          <Tab>Floor Plan</Tab>
+          <Tab>Map</Tab>
+        </TabList>
 
-      <h3>Description</h3>
-      <p>{property.description}</p>
+        <TabPanel>
+          <p>{property.description}</p>
+        </TabPanel>
+
+        <TabPanel>
+          <img
+            src={property.floorPlan}
+            alt="Floor Plan"
+            className="floor-plan"
+          />
+        </TabPanel>
+
+        <TabPanel>
+          <iframe
+            title="map"
+            src={property.map}
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            loading="lazy"
+          ></iframe>
+        </TabPanel>
+      </Tabs>
     </div>
   );
 }
