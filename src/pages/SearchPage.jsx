@@ -11,6 +11,10 @@ function SearchPage() {
   const [results, setResults] = useState(propertiesData.properties);
   const { favourites, addFavourites } = useContext(FavouritesContext);
 
+  function convertAddedToDate(added) {
+    return new Date(`${added.month} ${added.day}, ${added.year}`);
+  }
+
   function handleSearch() {
     const filtered = propertiesData.properties.filter((p) => {
       if (criteria.type && p.type !== criteria.type) return false;
@@ -20,8 +24,19 @@ function SearchPage() {
       if (criteria.maxBeds && p.bedrooms > criteria.maxBeds) return false;
       if (criteria.postcode && !p.location.toUpperCase().includes(criteria.postcode))
         return false;
-      if (criteria.dateFrom && new Date(p.added) < criteria.dateFrom) return false;
-      if (criteria.dateTo && new Date(p.added) > criteria.dateTo) return false;
+      const addedDate = new Date(
+      `${p.added.month} ${p.added.day}, ${p.added.year}`
+    );
+      const fromDate = criteria.dateFrom
+        ? new Date(criteria.dateFrom)
+        : null;
+      const toDate = criteria.dateTo
+        ? new Date(criteria.dateTo)
+        : null;
+
+      if (fromDate && addedDate < fromDate) return false;
+      if (toDate && addedDate > toDate) return false;
+
 
       return true;
     });
@@ -31,7 +46,7 @@ function SearchPage() {
 
   return (
     <div className="search-page">
-      <h2>Property Search</h2>
+      <h2>Search Your Property</h2>
 
       <SearchForm criteria={criteria} setCriteria={setCriteria} onSearch={handleSearch} />
 
@@ -47,35 +62,41 @@ function SearchPage() {
           );
 
           return(
-            <div className="property-card">
-              <img
-                src={property.picture}
-                alt="property"
-                width="200"
-              />
+            <div className="property-card" key = {property.id}>
+              <div className="property-image">
+                <img
+                  src={property.picture}
+                  alt="property"
+                  width="200"
+                />
+              </div>
+              <div className="property-info">  
           
-            <p><strong>{property.type}</strong></p>
-            <p>£{property.price.toLocaleString()}</p>
-            <p>{property.bedrooms} bedrooms</p>
-            <p>{property.location}</p>
-            <p>{property.shortDescription}</p> 
+                <p><strong>{property.type}</strong></p>
+                <p>£{property.price.toLocaleString()}</p>
+                <p>{property.bedrooms} bedrooms</p>
+                <p>{property.location}</p>
+                <p>{property.shortDescription}</p> 
+              </div>  
 
             {/* ADD TO FAVOURITES */}
-              <button
-                onClick={() => addFavourites(property)}
-                disabled={isFavourite}
-              >
-                {isFavourite
-                  ? "Added to Favourites"
-                  : "Add to Favourites"}
-              </button>
+              <div className="property-actions">
+                <button
+                  onClick={() => addFavourites(property)}
+                  disabled={isFavourite}
+                >
+                  {isFavourite
+                    ? "Added to Favourites"
+                    : "Add to Favourites"}
+                </button>
 
               {/* VIEW DETAILS */}
-              <Link to={`/property/${property.id}`}>
-                <button style={{ marginLeft: "10px" }}>
-                  View Details
-                </button>
-              </Link>
+                <Link to={`/property/${property.id}`}>
+                  <button style={{ marginLeft: "10px" }}>
+                    View Details
+                  </button>
+                </Link>
+              </div>
           </div>
           );
           
