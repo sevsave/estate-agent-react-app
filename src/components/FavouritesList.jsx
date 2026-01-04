@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FavouritesContext } from "../context/FavouritesContext";
 import { Link } from "react-router-dom";
-
+import './FavouritesList.css';
 function FavouritesList() {
   const { favourites, removeFavourites, clearFavourites } =
     useContext(FavouritesContext);
@@ -9,6 +9,7 @@ function FavouritesList() {
   return (
     <div className="favourites-list">
       <h3>My Favourites</h3>
+
 
       {favourites.length === 0 && <p>No favourites added yet.</p>}
 

@@ -1,3 +1,4 @@
+import './SearchForm.css';
 import React from "react";
 import { DropdownList, NumberPicker, DatePicker } from "react-widgets";
 import "react-widgets/styles.css";

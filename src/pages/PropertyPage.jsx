@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useContext } from "react";
 import { FavouritesContext } from "../context/FavouritesContext";
-
+import './PropertyPage.css';
 
 function PropertyPage() {
   const { id } = useParams();

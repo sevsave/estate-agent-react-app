@@ -4,7 +4,7 @@ import propertiesData from "../data/properties.json";
 import { Link } from "react-router-dom";
 import FavouritesList from "../components/FavouritesList";
 import { FavouritesContext } from "../context/FavouritesContext";
- 
+import './SearchPage.css'; 
 
 function SearchPage() {
   const [criteria, setCriteria] = useState({});
