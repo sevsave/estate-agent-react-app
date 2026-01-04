@@ -22,7 +22,7 @@
                 "/images/prop1/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop1floorplan.jpg",
+            "floorPlan":"/images/prop1/floorplan.jpg",
 			"url":"properties/prop1.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6754936725865!2d0.08208490000000002!3d51.3906419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1767428682821!5m2!1sen!2slk" ,
             "added" : {
@@ -54,7 +54,7 @@
                 "/images/prop2/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop2floorplan.jpg",
+            "floorPlan":"/images/prop2/floorplan.jpg",
 			"url":"properties/prop2.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.6133282394!2d0.0719676!3d51.373404799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1767428924921!5m2!1sen!2slk",
             "added": {
@@ -85,7 +85,7 @@
                 "/images/prop3/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop3floorplan.jpg",
+            "floorPlan":"/images/prop3/floorplan.jpg",
             "url": "properties/prop3.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.930929686488!2d-0.0111632!3d51.4043238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487601db50b65e85%3A0x9fcc0024acdb8851!2sOakwood%20Ave%2C%20Beckenham%2C%20UK!5e0!3m2!1sen!2slk!4v1767429060221!5m2!1sen!2slk",
             "added": {
@@ -116,7 +116,7 @@
                 "/images/prop4/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop4floorplan.jpg",
+            "floorPlan":"/images/prop4/floorplan.jpg",
             "url": "properties/prop4.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.7637396900213!2d-0.1000802!3d51.3706399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487607314c40f4d5%3A0xdcdb38df71d82fc6!2sHigh%20St%2C%20Croydon%2C%20UK!5e0!3m2!1sen!2slk!4v1767429116001!5m2!1sen!2slk", 
             "added": {
@@ -147,7 +147,7 @@
                 "/images/prop5/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop5floorplan.jpg",
+            "floorPlan":"/images/prop5/floorplan.jpg",
             "url": "properties/prop5.html",
             "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39931.80908435307!2d0.1702550500000043!3d51.279140399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df4d8a4d19afbd%3A0x5788f443e3b10b50!2sSevenoaks%20TN13%2C%20UK!5e0!3m2!1sen!2slk!4v1767429241973!5m2!1sen!2slk" ,
             "added": {
@@ -178,7 +178,7 @@
                 "/images/prop6/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop6floorplan.jpg",
+            "floorPlan":"/images/prop6/floorplan.jpg",
             "url": "properties/prop6.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.3870590176407!2d0.21965450000000694!3d51.4510496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b1962a4590b5%3A0x32ad0b63066e48f2!2sRiverside%20Way%2C%20Dartford%2C%20UK!5e0!3m2!1sen!2slk!4v1767429334211!5m2!1sen!2slk",
             "added": {
@@ -209,7 +209,7 @@
                 "/images/prop7/pic8.jpg"
 
             ],
-            "floorPlan":"/images/prop7floorplan.jpg",
+            "floorPlan":"/images/prop7/floorplan.jpg",
             "url": "properties/prop7.html",
             "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.6292307205345!2d0.1804248!3d51.4466027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ae18d2d587a9%3A0x74ad8a12b49e3653!2sStation%20Rd%2C%20Dartford%2C%20UK!5e0!3m2!1sen!2slk!4v1767429414826!5m2!1sen!2slk" ,
             "added": {

@@ -2,7 +2,7 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Estate Dashboard</h1>
+      <h1>Property Agent</h1>
     </header>
   );
 }

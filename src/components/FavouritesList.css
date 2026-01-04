@@ -36,3 +36,17 @@
 .favourite-item button:hover {
   background-color: #c82333;
 }
+
+.favourites-container {
+  border: 2px dashed #28a745;
+  padding: 10px;
+  transition: background 0.2s ease;
+}
+
+.favourites-container.over {
+  background: #e6ffe6;
+}
+
+.favourite-item {
+  margin-bottom: 10px;
+}
