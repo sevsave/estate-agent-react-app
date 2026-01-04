@@ -88,3 +88,52 @@
   background-color: #007bff;
   color: white;
 }
+
+@media (max-width: 1024px) {
+  .main-image img {
+    height: 250px;
+  }
+
+  .thumbnails img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .react-tabs__tab-list {
+    flex-wrap: wrap;
+  }
+
+  .react-tabs__tab {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-image img {
+    height: 200px;
+  }
+
+  .thumbnails {
+    gap: 5px;
+  }
+
+  .thumbnails img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .property-page {
+    padding: 15px;
+  }
+
+  .favourite-btn {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
+

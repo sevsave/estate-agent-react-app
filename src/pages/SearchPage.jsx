@@ -6,6 +6,8 @@ import FavouritesList from "../components/FavouritesList";
 import { FavouritesContext } from "../context/FavouritesContext";
 import './SearchPage.css'; 
 
+
+
 function SearchPage() {
   const [criteria, setCriteria] = useState({});
   const [results, setResults] = useState(propertiesData.properties);
@@ -14,7 +16,7 @@ function SearchPage() {
   function convertAddedToDate(added) {
     return new Date(`${added.month} ${added.day}, ${added.year}`);
   }
-
+           
   function handleSearch() {
     const filtered = propertiesData.properties.filter((p) => {
       if (criteria.type && p.type !== criteria.type) return false;

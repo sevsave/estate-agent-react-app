@@ -22,8 +22,6 @@
   width: 100%;
 }
 
-/* App.css */
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,7 +49,6 @@ button:hover {
   transform: translateY(-1px);
 }
 
-/* Links */
 a {
   text-decoration: none;
   color: #007bff;

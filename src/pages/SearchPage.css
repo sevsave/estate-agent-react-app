@@ -39,3 +39,45 @@
   justify-content: flex-start;
   gap: 10px;
 }
+/* Responsive for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .results {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .property-card {
+    flex-direction: column;
+  }
+
+  .property-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .property-actions button {
+    width: 100%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .results {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .property-card {
+    padding: 10px;
+  }
+
+  .property-info p {
+    font-size: 0.9rem;
+  }
+
+  .property-actions button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+

@@ -45,3 +45,34 @@
 .search-form button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 1024px) {
+  .search-form {
+    padding: 15px;
+  }
+
+  .search-form input,
+  .search-form select,
+  .search-form .rw-dropdownlist,
+  .search-form .rw-datepicker,
+  .search-form .rw-numberpicker {
+    padding: 6px 8px;
+  }
+
+  .search-form button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-form h3 {
+    font-size: 1.1rem;
+  }
+
+  .search-form button {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}
+
