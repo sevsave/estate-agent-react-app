@@ -92,7 +92,7 @@ function SearchForm({ criteria, setCriteria, onSearch }) {
       
       <button
         type="button"
-        onClick={onSearch}
+        onClick={onSearch}                          
         style={{
           marginTop: "10px",
           padding: "10px 20px",

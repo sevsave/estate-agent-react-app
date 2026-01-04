@@ -9,7 +9,7 @@ import { FavouritesContext } from "../context/FavouritesContext";
 
 function PropertyPage() {
   const { id } = useParams();
-  const { Favourites,addFavourites } = useContext(FavouritesContext);
+  const { favourites,addFavourites } = useContext(FavouritesContext);
 
   const property = propertiesData.properties.find(
     (p) => p.id.toString() === id
@@ -21,7 +21,7 @@ function PropertyPage() {
   }
   
   const [mainImage, setMainImage] = useState(property?.picture || "");
-  const isFavourite = Favourites.some(
+  const isFavourite = favourites.some(
     (fav)=>fav.id===property.id
   );
 

@@ -9,7 +9,7 @@ import { FavouritesContext } from "../context/FavouritesContext";
 function SearchPage() {
   const [criteria, setCriteria] = useState({});
   const [results, setResults] = useState(propertiesData.properties);
-  const { Favourites, addFavourites } = useContext(FavouritesContext);
+  const { favourites, addFavourites } = useContext(FavouritesContext);
 
   function handleSearch() {
     const filtered = propertiesData.properties.filter((p) => {
@@ -42,7 +42,7 @@ function SearchPage() {
       <div className="results">
         {results.length === 0 && <p>No properties found.</p>}
         {results.map((property) => {
-          const isFavourite = Favourites.some(
+          const isFavourite = favourites.some(
             (fav) => fav.id === property.id
           );
 
