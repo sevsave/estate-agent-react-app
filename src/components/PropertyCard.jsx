@@ -1,3 +1,4 @@
+import React from "react"; 
 function PropertyCard({ property }) {
   return (
     <div className="property-card" >

@@ -8,6 +8,7 @@ import FavouritesList from "../components/FavouritesList";
 import { FavouritesContext } from "../context/FavouritesContext";
 import './SearchPage.css'; 
 
+
 function DraggableProperty({ property, children }) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id: property.id,
@@ -71,7 +72,7 @@ function SearchPage() {
 
     if (!over) return;
     const draggedProperty = results.find((p) => p.id === active.id)
-      || favourites.find(f => f.id === active.id); // ADDED: allow removing favourites
+      || favourites.find(f => f.id === active.id); //  allow removing favourites
 
     if (!draggedProperty) return;
 

@@ -1,3 +1,4 @@
+import React from "react"; 
 import { useContext } from "react";
 import { FavouritesContext } from "../context/FavouritesContext";
 import { Link } from "react-router-dom";
@@ -6,7 +7,7 @@ import { useDroppable, useDraggable } from "@dnd-kit/core";
 
 function DraggableFavourite({ property, children }) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
-    id: property.id, // draggable id = property id
+    id: property.id, 
   });
 
   const style = {
