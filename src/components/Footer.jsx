@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 Estate Dashboard</p>
+      <p>© 2026 Property Agent</p>
     </footer>
   );
 }
