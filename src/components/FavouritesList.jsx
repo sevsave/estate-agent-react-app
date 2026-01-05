@@ -30,13 +30,11 @@ function FavouritesList() {
     <div
       ref={setNodeRef}
       className={`favourites-list ${isOver ? "over" : ""}`}
+      
     >
-
-
-    
       <h3>My Favourites</h3>
-
-
+      
+      {/* messeage for no duplicates*/}
       {favourites.length === 0 && <p>No favourites added yet.</p>}
 
       {favourites.map((property) => (
